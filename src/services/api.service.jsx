@@ -1,5 +1,6 @@
 
-const axios = require("axios");
+import axios from 'axios';
+
 const baseURL = "https://webhook.site";
 
 const axiosInstance = axios.create({
