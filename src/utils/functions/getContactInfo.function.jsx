@@ -1,4 +1,3 @@
-import postContactInfo from '../../services/contact-info/contact-info.service';
 import getIpAddress from '../../services/ip-address/ip-address.services';
 import contactInfo from '../models/contact-info';
 // Function to get contact info as Name, IPAdress, Timezone
