@@ -1,0 +1,121 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    position: sticky;
+    box-shadow:0 4px 9px -5px rgb(0 0 0 / 0.1);
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-collapse-button{
+    display: none;
+}
+
+.navbar-menu-item{
+    margin: 0 1rem;
+}
+
+.navbar-menu-items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-menu-items li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.navbar-menu-items li li:hover{
+    color: rgba(26,41,106,0.5);
+}
+
+.navbar-menu-items a:active{
+    color: #1a296a;
+    border-bottom: 2px solid #1a296a;
+}
+
+/* Responsive navbar */
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 0.5rem 1rem;
+    }
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+    .navbar-menu.active{
+        background-color: #fff;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .navbar-menu-items li {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar-menu-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .navbar-menu-item{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        display: table;        
+    }
+    
+    .navbar-menu-item:hover{
+        background-color: #f5f5f5;
+    }
+
+    .navbar-collapse-button{
+        display: block;
+    }
+    .navbar-collapse-button svg{
+        width: 20px;
+    }
+
+    .navbar-logo{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+
+
+

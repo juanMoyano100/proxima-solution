@@ -1,0 +1,60 @@
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0rem 2rem;
+    text-align: start;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.section-text {
+    width: 100%;
+    font-weight: 800;
+}
+
+.banner-text {
+    width: 100%;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.image-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Grid layout responsive cards  */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+/* responsive banner */
+
+@media screen and (max-width: 768px) {
+    .section {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
